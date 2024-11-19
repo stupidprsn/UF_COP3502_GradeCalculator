@@ -1,8 +1,13 @@
 # Hanlin Zhang
 # Nov. 19, 2024
 import os
-from assignment import Assignment
 import matplotlib.pyplot as plt
+
+class Assignment:
+    def __init__(self, name: str = '', code: str = '', points: str = '') -> None:
+        self.name: str = name
+        self.code: str = code
+        self.points: str = points
 
 directory: str = os.path.dirname(os.path.realpath(__file__))
 
