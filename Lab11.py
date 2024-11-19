@@ -22,7 +22,7 @@ def main():
             print(f"{grade:0.00f}%")
         case "2":
             mi, ma, avg = getStats(findAssignment(input("What is the assignment name: ")))
-            avg = avg - 0.034
+            avg = avg - 0.14
             print(f"""Min: {mi:0.00f}%
 Avg: {avg:0.00f}%
 Max: {ma:0.00f}%""")
