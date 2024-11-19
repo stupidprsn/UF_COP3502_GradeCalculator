@@ -13,7 +13,8 @@ def main():
 """)
     match input("Enter your selection: "):
         case "1":
-            print(f"{getGrade(findStudent(input("What is the student's name: "))):0.00f}%")
+            grade = getGrade(findStudent(input("What is the student's name: ")))
+            print(f"{grade:0.00f}%")
         case "2":
             mi, ma, avg = getStats(findAssignment(input("What is the assignment name: ")))
             print(f"""Min: {mi:0.00f}%
